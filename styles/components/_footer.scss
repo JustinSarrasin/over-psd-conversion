@@ -1,3 +1,134 @@
-footer {
-    background: green;
+.bottom {
+    margin-top: 75px;
+    border-top: 1px solid #e6e5e1;
+    border-bottom: 1px solid #e6e5e1;
+}
+
+.bottom h4::after {
+    content: "";
+    margin-top: 5px;
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    // color: black;
+    background-color: #a8edea;
+}
+
+
+.bottom-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 75px;
+}
+
+
+
+.contacts-container {
+    width: 33%;
+}
+
+.contacts-container div {
+    margin-bottom: 40px;
+}
+
+
+.contacts-container p {
+    color: #888890;
+    line-height: 2;
+    font-size: 14px;
+}
+
+
+.bottom-container h4 {
+    margin: 0;
+    color: #1a1a26;
+    text-transform: capitalize;
+}
+
+.contacts span{
+    color: #1a1a26;
+    text-transform: capitalize;
+
+}
+
+.contacts div{
+    margin-bottom: 0;
+}
+
+.social-bottom i {
+    font-size: 25px;
+    color: #1a1a26;
+    margin-right: 20px;
+}
+
+.services {
+    ul {
+        list-style: none;
+        // margin: 0;
+        padding: 0;
+        li{
+            a {
+                color: #888890;
+                text-decoration: none;
+                text-transform: capitalize;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.instagram {
+    width: 25%;
+    
+    // display: flex;
+}
+
+.instagram h4 {
+    margin-bottom: 25px;
+}
+.insta-gallery {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 5px;
+
+    // width: 100%;
+    // display: inline-block;
+    // width: 33%;
+    // display: block;
+    // display: flex;
+
+    // width: 33%;
+    // display: flex;
+    // width: 25%;
+}
+
+.insta-gallery img {
+
+    justify-content: space-between;
+    // margin: ma;
+    // display: block;
+    // display: flex;
+    // display: flex;
+    // justify-content: space-between;
+}
+
+.payment-gallery {
+    display: flex;
+}
+
+.payment-gallery div{
+    
+    margin: 20px 10px 0 0;
+}
+footer div {
+    color: #888890;
+    display: flex;
+    justify-content: space-between;
+    // background: green;
+}
+
+footer strong {
+    color: #1a1a26;
 }

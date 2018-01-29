@@ -1,0 +1,46 @@
+.interior-plants {
+    // margin-top: 100px;
+
+    display: flex;
+    // margin-top: 2000px;
+}
+
+.interior-plants h5 {
+    color: #a8edea;
+    text-align: center;
+    margin: 0;
+}
+
+.interior-plants h2 {
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0;
+}
+
+.interior-heading {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.interior-plants img {
+    position: absolute;
+    z-index: -1;
+    right: 250px;
+    top: -5px;
+}
+
+.interior-plants blockquote {
+    width: 70%;
+    text-align: center;
+    color:#888890;
+    font-size: 14px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.interior-plants p {
+    text-align: center;
+    margin-top: 40px;
+}

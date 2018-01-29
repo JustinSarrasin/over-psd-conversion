@@ -1,3 +1,160 @@
 header {
-    width: 90%;
+    margin-top: 25px;
 }
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    div {
+        width: 33%;
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+// .top-nav div {
+//     width: 33%;
+// }
+
+.top-nav-l, .top-nav-r {
+    display: flex;
+}
+
+.top-nav-l li {
+    margin-right: 25px;
+}
+
+.top-nav-r {
+    justify-content: flex-end;
+    li {
+    margin-left: 25px;
+    position: relative;
+    }
+}
+
+.top-nav-r p {
+    font-size: 10px;
+    position: absolute;
+    background: #a8edea;
+    border: .5px solid #a8edea;
+    border-radius: 50%;
+    padding: 0 6px;
+    bottom: 10px;
+    left: 10px;
+
+
+}
+
+// .top-nav ul {
+//     list-style: none;
+//     margin: 0;
+//     padding: 0;
+// }
+
+.top-nav a {
+    text-decoration: none;
+    color: #1a1a26;
+    text-transform: uppercase;
+    &:hover {
+        border-bottom: 1px solid #1a1a26;
+    }
+}
+
+// .top-nav a:hover {
+//     border-bottom: 1px solid #1a1a26;
+// }
+
+.logo {
+    margin: 0 auto;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;  
+    // align-content: center;
+    // align-self: center;  
+}
+
+// .top-nav-l {
+//     display: flex;
+//     flex-direction: row;
+// }
+
+.headings {
+    // background: red;
+    display: flex;
+    min-height: 90vh;
+    margin-top: 25px;
+    // max-width: 100%;
+    background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.6)), url(../assets/hero.jpg);
+    // background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255,255,255,0.5)), url(images/bearhero.jpg);
+    background-size: cover;
+    background-position: center;
+    text-transform: capitalize;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    h3{
+        color: #888890;
+        margin: 0;
+        // 
+       
+    }
+}
+
+.headings h1 {
+    margin: 0;
+    font-weight: 500px;
+}
+
+.headings div {
+    // margin-top: 70px;
+}
+
+.headings a {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    background-color: #f07f84;
+    padding: 20px 40px;
+    &:hover {
+        background-color: #888890; 
+    }
+    // margin: 200px;
+}
+
+.shop-now {
+    margin-top: 50px;
+}
+
+.scroll-buttons {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-self: flex-end;
+    // margin: 0 auto;
+    color: #1a1a26;
+    padding: 20px;
+    a {
+        color: #1a1a26;
+        background-color: transparent;
+        padding: 5px;
+        font-size: 15px;
+        &:hover {
+            background-color: transparent;
+            
+        }
+    }
+}
+.scroll-buttons i:hover {
+    color: #888890;
+    transform: scale(1.5);
+}
+
+
+
+
+

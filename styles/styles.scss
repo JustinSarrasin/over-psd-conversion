@@ -1,7 +1,18 @@
-@import "components/header";
-@import "components/footer";
-body {
-    background: red;
+@import "components/_normalize.scss";
+@import "components/_typography.scss";
+@import "components/_header";
+@import "components/_footer";
+@import "components/_interior.scss";
+@import "components/_interior-gallery.scss";
+// @import "components/"
+
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
 }
 
 //make the partial
