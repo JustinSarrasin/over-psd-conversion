@@ -9,6 +9,7 @@
     color: #a8edea;
     text-align: center;
     margin: 0;
+    // text-shadow: 2px 2px 2px black;
 }
 
 .interior-plants h2 {
@@ -43,4 +44,10 @@
 .interior-plants p {
     text-align: center;
     margin-top: 40px;
+    text-transform: uppercase;
+}
+
+.interior-plants em {
+    color: #888890;
+    font-size: 14px;
 }
