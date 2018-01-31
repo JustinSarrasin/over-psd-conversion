@@ -13,15 +13,20 @@
         <div class="top-nav wrapper">
             <div>
                 <ul class="top-nav-l">
-                    <li><a href="home.html">home</a></li><li><a href="about.html">about</a></li>
+                    <li><a href="index.html">home</a></li><li><a href="#about">about</a></li>
                     <li><a href="pages.html">pages</a></li>
                     <li><a href="shop.html">shop</a></li>
-                    <li><a href="blog.html">blog</a></li>
+                    <li><a href="#blog">blog</a></li>
+                    <li class="hamgburger">
+                        <a href="index.html">
+                            <img src="assets/Menu.png" alt="">
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div>
                <div class="logo"> 
-                   <img src="assets/Logo.png" alt="over logo">
+                   <img src="assets/Logo.svg" alt="over logo">
                 </div>
             </div>
             <div>
@@ -43,6 +48,14 @@
            <div>
                 <h3>over collections 2017</h3>
                 <h1>living &amp; styling with plants</h1>
+                <div class="arrows">
+                    <div>
+                       <a href="left.html"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+                    </div>
+                    <div>
+                        <a href="right.html"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
                 <div class="shop-now">
                     <a href="shopnow.html">shop now</a>
                 </div>
@@ -54,16 +67,12 @@
                 <a href=""><i class="fa fa-circle" aria-hidden="true"></i></a>
             </div>
         </div>
-        
     </header>
     
-    <section class="interior-plants wrapper">
+    <section id="about", class="interior-plants wrapper">
         <div>
             <div class="interior-heading">
                 <h5>Welcome to</h5>
-                <div>
-                    <img src="assets/background flowers.jpg" alt="">
-                </div>
                 <h2>the home of interior plants</h2>
             </div>
             <blockquote> We are passionate about exotic indoor plants, we know them and always endeavour to precondition them so that you do not have many of the problems so often associated with indoor plants, after all we have a stock of thousands of plants and we have to know how to care for them</blockquote>
@@ -71,7 +80,7 @@
         </div>
     </section>
 
-    <section class="inter-gallery wrapper clearfix">
+    <section class="inter-gallery wrapper clearfix wrapper2">
         <div class="gallery-flex-container">
             <div class="gallery-left">
                 <img src="assets/cactus.jpg" alt="potted cactus">
@@ -117,33 +126,49 @@
     </section>
 
     
-
     <section class="pop-products wrapper">
-        <h2>popular products</h2>
+        <div>
+            <h2>popular products</h2>
+            <div class="borderline">
+                <p> <span> </span></p>
+            </div>
+        </div>
         <nav class="pop-nav">
             <ul>
                 <li><a href="newarrivals.html">new arrivals</a></li>
                 <li><a href="bestseller.html">best seller</a></li>
                 <li><a href="features.html">features</a></li>
             </ul>
+        </nav>
             <div class="products-gallery wrapper">
                 <div>
                     <div class="image-container">
                         <div class="gallery-overlay">
-                            <!-- <a href="cart.html">add to cart</a> -->
+                            <a href="cart.html">add to cart</a>
                         </div>
-                        <div class="tags">
-                            <p class="new">new</p>
+                        <div class="tags new">
+                            <p>new</p>
                         </div>
-                        <p class="hot hot1">hot</p>
-                        <img src="assets/plant10.jpg" alt="potted plants">
-                        <h6>Pebbeled backpack</h6>
+                        <div class="tags hot">
+                            <p>hot</p>
+                        </div>
+                        
+
+                        <div class="gallery-item">
+                            <img src="assets/plant10.jpg" alt="potted plants">
+                        </div>
+                        <h6>Pebbled backpack</h6>
                         <h5>$99.00</h5>
                     </div>
                 </div>
                 <div>
                     <div class="image-container">
-                        <p class="new">new</p>
+                        <div class="gallery-overlay">
+                            <a href="cart.html">add to cart</a>
+                        </div>
+                        <div class="tags new new2">
+                            <p>new</p>
+                        </div>
                         <img src="assets/plant2.jpg" alt="potted plant">
                         <h6>Flower print dress</h6>
                         <h5>$52.00</h5>
@@ -151,7 +176,12 @@
                 </div>
                 <div>
                     <div class="image-container">
-                        <p class="discount">-20%</p>
+                        <div class="gallery-overlay">
+                            <a href="cart.html">add to cart</a>
+                        </div>
+                        <div class="tags discount">
+                            <p>-20%</p>
+                        </div>
                         <img src="assets/plant3.jpg" alt="plant in cube">
                         <h6>Printed cotton T-shirt </h6>
                         <h5>$56.00 <span>$79.00</span></h5>
@@ -159,6 +189,9 @@
                 </div>
                 <div>
                     <div class="image-container">
+                        <div class="gallery-overlay">
+                            <a href="cart.html">add to cart</a>
+                        </div>
                         <img src="assets/plant4.jpg" alt="flowers in vase">
                         <h6>Slim-fit cotton T-shirt</h6>
                         <h5>$77.00 <span>$77.00</span></h5>
@@ -166,16 +199,22 @@
                 </div>
                 <div>
                     <div class="image-container">
-                        <p class="discount">-20%</p>
+                        <div class="gallery-overlay">
+                            <a href="cart.html">add to cart</a>
+                        </div>
+                        <div class="tags discount">
+                            <p>-20%</p>
+                        </div>
                         <img src="assets/plant5.jpg" alt="potted plant">
                         <h6>Zip leather jacket</h6>
                         <h5>$178.00 <span>$199.00</span></h5>
                     </div>
                 </div>
-            </div>
-            <div class="products-gallery products-gallery-bottom">
                 <div>
                     <div class="image-container">
+                        <div class="gallery-overlay">
+                            <a href="cart.html">add to cart</a>
+                        </div>
                         <img src="assets/plant6.jpg" alt="hanging plant">
                         <h6>Flower print dress</h6>
                         <h5>$98.00</h5>
@@ -183,7 +222,12 @@
                 </div>
                 <div>
                     <div class="image-container">
-                        <p class="hot hot7">hot</p>
+                        <div class="gallery-overlay">
+                            <a href="cart.html">add to cart</a>
+                        </div>
+                        <div class="tags hot">
+                            <p>hot</p>
+                        </div>
                         <img src="assets/plant7.jpg" alt="plant in bowl">
                         <h6>Combined weekend long</h6>
                         <h5>$85.00</h5>
@@ -191,7 +235,12 @@
                 </div>
                 <div>
                     <div class="image-container">
-                        <p class="discount">-20%</p>
+                        <div class="gallery-overlay">
+                            <a href="cart.html">add to cart</a>
+                        </div>
+                        <div class="tags discount">
+                            <p>-20%</p>
+                        </div>
                         <img src="assets/plant8.jpg" alt="flower">
                         <h6>Tortoiseshell retro sunglasses</h6>
                         <h5>$56.00</h5>
@@ -199,20 +248,25 @@
                 </div>
                 <div>
                     <div class="image-container">
+                        <div class="gallery-overlay">
+                            <a href="cart.html">add to cart</a>
+                        </div>
                         <img src="assets/plant9.jpg" alt="plant">
                         <h6>Slim fit Patrick jeans</h6>
                         <h5>$85.00</h5>
                     </div>
                 </div>
-                <div>
+                <div class="end-gallery">
                     <div class="image-container">
+                        <div class="gallery-overlay">
+                            <a href="cart.html">add to cart</a>
+                        </div>
                         <img src="assets/plant10.jpg" alt="plant">
                         <h6>Embroidered message cap</h6>
                         <h5>$178.00 <span>$199.00</span></h5>
                     </div>
                 </div>
             </div>
-        </nav>
     </section>
 
     <section class="quote-video">
@@ -261,8 +315,13 @@
         </div>
     </section>
 
-    <section class="blog wrapper">
+    <section id="blog", class="blog wrapper">
         <h2>from our blog</h2>
+        <div class="borderline">
+            <p>
+                <span> </span>
+            </p>
+        </div>
         <div class="blog-gallery">
             <div class="blog-gallery-items">
                 <div>
@@ -292,7 +351,14 @@
     </section>
 
     <section class="sign-up wrapper">
-        <h2>sign up for newsletter</h2>
+        <div>
+            <h2>sign up for newsletter</h2>
+            <div class="borderline">
+                <p>
+                    <span> </span>
+                </p>
+            </div>
+        </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam soluta reicie ipsum dolor sit amet consectetur adipisicing elit. Mollitia, amet. cum et.</p>
         <div>
             <input type="email" placeholder="enter your email">
@@ -320,13 +386,16 @@
 
     <section class="bottom">
         <div class="bottom-container wrapper">
+            <div class="logo-mobile">
+                <img src="assets/Logo.svg" alt="over logo">
+            </div>
             <div class="contacts-container">
-                <div>
-                    <img src="assets/Logo.png" alt="over logo">
+                <div class="logo-bottom">
+                    <img src="assets/Logo.svg" alt="over logo">
                 </div>
     
-                <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem non pariatur sed, distinctio neque velit suscipit magni cumque at ipsa!</p>
+                <div class="foot-flex-1">
+                    <p class="footer-description"></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem non pariatur sed, distinctio neque velit suscipit magni cumque at ipsa!</p>
                 </div>
     
                 <div class="contacts">
@@ -357,69 +426,71 @@
                 </div>
             </div>
     
-            <div class="services">
-                <h4>services</h4>
-                <ul>
-                    <li><a href="internationalshipping.html">international shipping</a></li>
-                    <li><a href="termsandconditions.html">terms and conditions</a></li>
-                    <li><a href="ordersandreturns.html">orders and returns</a></li>
-                    <li><a href="shppingandpolicies.html">shipping rates and policies</a></li>
-                    <li><a href="faqs.html">faqs</a></li>
-                    <li><a href="contacts.html">contacts</a></li>
-                </ul>
-            </div>
-    
-            <div class="services">
-                <h4>your account</h4>
-                <ul>
-                    <li><a href="order.html">your order</a></li>
-                    <li><a href="wishlist.html">your wishlist</a></li>
-                    <li><a href="paymentmethod.html">payment method</a></li>
-                    <li><a href="newsletter.html">newsletter</a></li>
-                    <li><a href="aboutus.html">about us</a></li>
-                    <li><a href="privacypolicy.html">privacy policy</a></li>
-                </ul>
-            </div>
-    
-            <div class="instagram">
-                <h4>instagram</h4>
-                <div class="insta-gallery">
-                    <div>
-                        <img src="assets/footer-plant-1.jpg" alt="potted plant">
-                    </div>
-                    <div>
-                        <img src="assets/footer-plant2.jpg" alt="potted plant">
-                    </div>
-                    <div>
-                        <img src="assets/footer-plant3.jpg" alt="flowers in vase">
-                    </div>
+            <div class="footer-flex-container">
+                <div class="services">
+                    <h4>services</h4>
+                    <ul>
+                        <li><a href="internationalshipping.html">international shipping</a></li>
+                        <li><a href="termsandconditions.html">terms and conditions</a></li>
+                        <li><a href="ordersandreturns.html">orders and returns</a></li>
+                        <li><a href="shppingandpolicies.html">shipping rates and policies</a></li>
+                        <li><a href="faqs.html">faqs</a></li>
+                        <li><a href="contacts.html">contacts</a></li>
+                    </ul>
                 </div>
-                <div class="insta-gallery">
-                    <div>
-                        <img src="assets/footer-plant4.jpg" alt="plant in bowl">
-                    </div>
-                    <div>
-                        <img src="assets/footer-plant5.jpg" alt="plant on table">
-                    </div>
-                    <div>
-                        <img src="assets/footer-plant6.jpg" alt="plant with picture behind">
-                    </div>
+        
+                <div class="services">
+                    <h4>your account</h4>
+                    <ul>
+                        <li><a href="order.html">your order</a></li>
+                        <li><a href="wishlist.html">your wishlist</a></li>
+                        <li><a href="paymentmethod.html">payment method</a></li>
+                        <li><a href="newsletter.html">newsletter</a></li>
+                        <li><a href="aboutus.html">about us</a></li>
+                        <li><a href="privacypolicy.html">privacy policy</a></li>
+                    </ul>
                 </div>
-                <div class="payment-gallery">
-                    <div>
-                        <img src="assets/Amex.png" alt="amex card">
+        
+                <div class="instagram">
+                    <h4>instagram</h4>
+                    <div class="insta-gallery">
+                        <div>
+                            <img src="assets/footer-plant-1.jpg" alt="potted plant">
+                        </div>
+                        <div>
+                            <img src="assets/footer-plant2.jpg" alt="potted plant">
+                        </div>
+                        <div>
+                            <img src="assets/footer-plant3.jpg" alt="flowers in vase">
+                        </div>
                     </div>
-                    <div>
-                        <img src="assets/Discover.png" alt="discover card">
+                    <div class="insta-gallery">
+                        <div>
+                            <img src="assets/footer-plant4.jpg" alt="plant in bowl">
+                        </div>
+                        <div>
+                            <img src="assets/footer-plant5.jpg" alt="plant on table">
+                        </div>
+                        <div>
+                            <img src="assets/footer-plant6.jpg" alt="plant with picture behind">
+                        </div>
                     </div>
-                    <div>
-                        <img src="assets/Visa.png" alt="visa card">
-                    </div>
-                    <div>
-                        <img src="assets/MC.png" alt="mastercard">
-                    </div>
-                    <div>
-                        <img src="assets/Flatcard.png" alt="flat card">
+                    <div class="payment-gallery">
+                        <div>
+                            <img src="assets/Amex.png" alt="amex card">
+                        </div>
+                        <div>
+                            <img src="assets/Discover.png" alt="discover card">
+                        </div>
+                        <div>
+                            <img src="assets/Visa.png" alt="visa card">
+                        </div>
+                        <div>
+                            <img src="assets/MC.png" alt="mastercard">
+                        </div>
+                        <div>
+                            <img src="assets/Flatcard.png" alt="flat card">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -436,6 +507,5 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>

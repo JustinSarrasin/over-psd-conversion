@@ -1,3 +1,7 @@
+// remaining body styling in this partial
+// new partials kept on creating new .css files no matter how I created/imported/saved them
+
+//interior-gallery styling starts
 .gallery-flex-container {
     margin-top: 75px;
 }
@@ -10,6 +14,37 @@
 .gallery-flex-container {
     display: flex;
     justify-content: space-between;
+}
+
+// gallery snaps to portrait
+@media (max-width: 940px) {
+    .gallery-flex-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 68%;
+    margin: 0 auto;
+    justify-content: space-around;
+    }
+  
+    .gallery-top {
+        justify-content: center;
+    }
+
+    .gallery-left img {
+        width: 120%;
+    }
+
+    .gallery-left {
+        width: 100%;
+    }
+
+    .gallery-flex-container img{
+        max-width: 100%;
+    }
+
+    .gallery-right {
+        justify-content: center;
+    }
 }
 
 .gallery-left {
@@ -25,6 +60,14 @@
     justify-content: space-between;
 }
 
+.gallery-top-l,
+.gallery-top-r {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
 .gallery-bottom {
     display: flex;
     position: relative;
@@ -38,6 +81,8 @@
 .gallery-top-r h4 {
     margin: 0;
     padding: 10px 20px 0;
+    text-transform: capitalize;
+    font-weight: 400;
 }
 
 .gallery-left p,
@@ -47,6 +92,8 @@
     margin: 0;
     padding: 0 20px 10px;
     color: #888890;
+    text-transform: capitalize;
+    font-weight: 400;
 }
 
 .gallery-left div {
@@ -71,14 +118,6 @@
     text-decoration: none;
 }
 
-.gallery-top-l,
-.gallery-top-r {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-}
-
 .gallery-top-l div,
 .gallery-top-r div {
     margin: auto;
@@ -92,13 +131,6 @@
     }
 }
 
-
-
-
-
-
-
-
 .gallery-bottom div {
     margin: auto;
     position: absolute;
@@ -111,23 +143,48 @@
     }
 }
 
-
-
-
-
-
-
 .pop-products h2 {
     text-align: center;
     text-transform: capitalize;
     margin: 70px 0 0;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    margin-top: 75px;
+    margin-bottom: 40px;
+}
+ 
+.borderline p {
+    position: relative;
+    margin-bottom: 40px;
+    width: 14%;
+    margin: auto;
+    border-bottom: 3px solid #a8edea;
+    span {
+        border-bottom: 3px solid #888890;
+        background-color: #888890;
+    }
 }
 
+.borderline p::before {
+    content: "";
+    display: flex;
+    display: block;
+    height: 2.5px;
+    width: 40%;
+    position: absolute;
+    background: #888890;
+    top: 0%;
+    right: 31%;
+}
+
+// pop products styling starts
 .pop-nav {
     ul{
         display: flex;
         padding: 0;
         justify-content: center;
+        margin-top: 50px;
         margin-bottom: 50px;
         li {
             list-style: none;
@@ -136,6 +193,7 @@
                 text-decoration: none;
                 text-transform: capitalize;
                 color: #1a1a26;
+                font-weight: 400;
                 &:hover {
                     border-bottom: 2px solid black;
                 }
@@ -144,18 +202,50 @@
     }
 }
 
+// products gallery starts
 .products-gallery {
     position: relative;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    // margin: 0 0 200px 0;
     h6, h5 {
         text-align: center;
         margin: 10px 0 0;
-    
+        font-weight: 400;
         }
     }
+
+div.products-gallery {
+    margin-bottom: 75px;
+}
+
+@media (max-width: 940px) {
+    .products-gallery {
+        padding: 15px;
+    }
+}
+
+// removes 10th item for a 3x3 gallery
+@media (max-width: 875px) {
+    .end-gallery {
+        display: none;
+    }
+}
+
+// brings back in 10th item for a 2x5 gallery
+@media (max-width: 660px) {
+    .end-gallery {
+        display: initial;
+    }
+
+     div.products-gallery {
+        justify-content: space-around;
+    }
+}
+
+.products-gallery h5 {
+    margin-bottom: 20px;
+}
 
 .product-gallery div {
     position: relative;
@@ -169,39 +259,59 @@
     border-radius: 45%;
 }
 
-// .tags {
-//     position: absolute;
-//     height: 50px;
-//     width: 100px;
-//     background-color: black;
-//     border-radius: 40%;
-// }
-
-.hot {
-    background-color: #ff9a9e;
+.tags {
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .new {
-    position: absolute;
-    background-color: #79dad6; 
-    right: 5px;
+    top: 50px;
+    right: 10px;
+    background-color: #79dad6;
+}
+
+.new2 {
+    top: 10px;
 }
 
 .hot {
-    position: absolute;
+    top: 10px;
+    right: 10px;
     background-color: #ff9a9e;
-    right: 5px;
-
 }
 
-.hot1 {
-    right: 5px;
-    top: 25px;
+.discount {
+    top: 10px;
+    right: 10px;
+    background-color: #f6b895;
+}
 
+.tags p {
+    margin: 0;
 }
 
 .image-container {
     position: relative;
+}
+
+@media (max-width: 450px){
+    div.products-gallery {
+        justify-content: center;
+    }
+    .image-container {
+        margin: 0 auto;
+        
+    }
 }
 
 .discount{
@@ -220,41 +330,51 @@
     text-decoration: line-through;
 }
 
+.gallery-overlay {
+    position: absolute;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,.5);
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
 
-// .gallery-overlay {
-//     position: absolute;
-//     top:0;
-//     left:0;
-//     background: rgba(255,255,255,0.6);
-//     height: 100%;
-//     width: 100%;
-//     visibility: hidden;
-//     opacity: 0;
-//     transition: all 0.4s ease;
-// }
+.image-container:hover .gallery-overlay {
+    visibility: visible;
+    opacity: 1;
+}
 
-// img:hover .gallery-overlay {
-//     visibility: visible;
-//     opacity: 1;
-// }
+.gallery-overlay:hover {
+    visibility: visible;
+    opacity: 1;
+}
 
+.image-container a {
+    text-decoration: none;
+    background-color: white;
+    padding: 20px 20px;
+    color: #888890;
+    text-transform: uppercase;
+    margin-bottom: 75px;
+}
 
-
-
-
-
+// quote/video styling starts
 .quote-video {
     width: 100%;
     min-height: 70vh;
     position: relative;
-    margin-top: 75px;
-    display: flex;
 }
 
 .quote-video-container {
     display: flex;
     align-items: center;
-    width: 100%
+    width: 100%;
 }
 
 .cust-quote {
@@ -264,23 +384,37 @@
     width: 50%;
     background-image: url(../assets/ShapeBG.jpg);
     min-height: 70vh;
-    background-size: cover;
-    background-position: center;
+}
+
+// flips to portrait 1x2
+@media (max-width: 940px) {
+    .quote-video-container {
+        flex-direction: column;
+    }
+    .cust-quote { 
+        width: 100%;
+    }
 }
 
 .cust-blockquote {
     position: absolute;
     width: 50%;
     text-align: center;
+    font-weight: 400;
     h2 {
         text-transform: capitalize;
         text-align: center;
     }
 }
 
+@media (max-width: 940px) {
+    .cust-blockquote {
+        width: 100%;
+    }
+}
+
 .cust-blockquote div {
     display: flex;
-    // left: 100px;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
@@ -297,6 +431,10 @@
     text-align: center;
 }
 
+.cust-scroll {
+    padding-bottom: 10px;
+}
+
 .cust-scroll a{
     margin-top: 30px;
     color: #888890;
@@ -304,13 +442,10 @@
     padding: 10px;
     &:hover {
         transform: scale(2);
-
     }
-    // justify-content: center;
-    // align-items: center;
 }
 
-
+// main video styling starts
 .video {
     width: 50%;
     display: flex;
@@ -320,7 +455,13 @@
     background-image: url(../assets/video-bg2.jpg);
     min-height: 70vh;
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 940px) {
+    .video {
+        width: 100%;
+    }
 }
 
 .video-container {
@@ -332,15 +473,11 @@
 }
 
 .video-container .play-logo {
-    // justify-content: center;
     margin: 0 auto;
 }
 
-
 .play-logo {
     display: flex;
-    // text-align: center;
-    // justify-content: center;
     font-size: 24px;
     border: 10px solid rgba(255,255,255,0.3);
     background-clip: padding-box;
@@ -352,11 +489,16 @@
     height: 100px;
     width: 100px;
     margin-bottom: 100px;
+    transition: all 2s;
     a {
         color: white;
         padding: 50px;
+        transition: all .5s;
         &:hover {
             background: #888890;
+            border-radius: 50%;
+            transform: scale(.7);border: 10px solid #f07f84;
+            background-clip: padding-box;
             border-radius: 50%;
         }
     }
@@ -365,13 +507,7 @@
 .video-container p {
     color: white;
     text-transform: uppercase;
-    // align-items: flex-start;
     margin: 0 0 50px;
-    
-    // position: absolute;
-    // text-align: center;
-    // bottom: 20px;
-    // right: 150px;
 }
 
 @font-face {
@@ -388,29 +524,42 @@
     margin-top: 100px;
     h2 {
         color: white;
-        // margin-top: -75px;
         font-size: 96px;
         margin: 0;
         font-family: "PressStyle";
-        
-        // text-align: center;
     }
-    // font-family: "PressStyle";
 }
 
+// change video logo size for mobile
+@media (max-width: 480px) {
+    .video-container h2 {
+        font-size: 60px;
+        margin-top: 30px;
+    }
+}
 
+.video-container p {
+    font-weight: 400;
+}
 
+// blog styling starts
 .blog h2 {
     text-transform: capitalize;
     text-align: center;
+    margin-top: 0;
     padding-top: 75px;
-    // flex-grow: -1;
 }
 
 .blog-gallery {
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
+}
 
+@media (max-width: 940px) {
+    .blog-gallery {
+        justify-content: space-around;
+    }
 }
 
 .blog-gallery-items {
@@ -418,11 +567,34 @@
     h6 {
         color: #888890;
         text-transform: capitalize;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 650px) {
+    .blog-gallery {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .blog-gallery-items {
+        width: 100%;
+        margin-bottom: 50px;
+    } 
+
+    .blog-gallery h6 {
+        margin: 5px;
+    }
+
+    .blog-gallery h5 {
+        margin: 5px;
     }
 }
 
 .blog-gallery-items h5 {
     text-transform: capitalize;
+    font-weight: 400;
 }
 
 .blog-gallery-items a {
@@ -431,13 +603,11 @@
     border-bottom: 2px solid black;
     padding-bottom: 5px;
     text-transform: capitalize;
+    font-weight: 400;
+    &:hover {
+        color: #888890;
+    }
 }
-
-// .blog-gallery-items h6 {
-//         color: #888890;
-//     }
-
-
 
 .sign-up {
     position: relative;
@@ -449,22 +619,13 @@
     text-transform: capitalize;
 }
 
-// .sign-up h2::after {
-//     content: "";
-//     margin-top: 5px;
-//     display: block;
-//     position: absolute;
-//     width: 40px;
-//     height: 2px;
-//     // color: black;
-//     background-color: #a8edea;
-// }
-
-.sign-up p {
+.sign-up p:nth-child(2) {
     width: 60%;
     margin: 0 auto;
     color: #888890;
     text-align: center;
+    font-weight: 400;
+    margin-top: 50px;
 }
 
 .sign-up div {
@@ -482,7 +643,7 @@
 .sign-up i {
     position: absolute;
     bottom: 6px;
-    right: 150px;
+    right: 12%;
 }
 
 .stores {
@@ -491,3 +652,14 @@
     justify-content: space-between;
 }
 
+@media (max-width: 940px) {
+    .stores {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 680px) {
+    section.stores {
+        display: none;
+    }
+}

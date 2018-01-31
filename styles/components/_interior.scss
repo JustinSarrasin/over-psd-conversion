@@ -1,15 +1,13 @@
+// interior menu styling starts
 .interior-plants {
-    // margin-top: 100px;
-
     display: flex;
-    // margin-top: 2000px;
 }
 
 .interior-plants h5 {
     color: #a8edea;
     text-align: center;
     margin: 0;
-    // text-shadow: 2px 2px 2px black;
+    font-weight: 400;
 }
 
 .interior-plants h2 {
@@ -25,11 +23,17 @@
     margin-top: 100px;
 }
 
-.interior-plants img {
+.interior-heading {
+    background-image: url(../assets/background-flowers.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.flower-background img {
     position: absolute;
     z-index: -1;
-    right: 250px;
-    top: -5px;
+    right: 35%;
+    top: 0px;
 }
 
 .interior-plants blockquote {
@@ -39,6 +43,13 @@
     font-size: 14px;
     margin: 0 auto;
     margin-top: 25px;
+    font-weight: 400;
+}
+
+@media (max-width: 940px) {
+    .interior-plants blockquote {
+        width: 85%;
+    }
 }
 
 .interior-plants p {
