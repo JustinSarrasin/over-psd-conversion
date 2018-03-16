@@ -26,6 +26,10 @@ header {
     flex-wrap: wrap;
 }
 
+.mobile-header {
+   display: none;
+}
+
 @media (max-width: 940px) {
     .top-nav {
         padding: 15px;
@@ -116,6 +120,15 @@ header {
     &:hover {
         color: #888890;
     }
+}
+
+@media (max-width: 370px) {
+   .top-nav-l {
+      display: none;
+   }
+   .mobile-header {
+      display: block;
+   }
 }
 
 .logo {

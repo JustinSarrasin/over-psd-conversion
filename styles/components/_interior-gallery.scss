@@ -407,11 +407,39 @@ div.products-gallery {
     }
 }
 
+
 @media (max-width: 940px) {
     .cust-blockquote {
         width: 100%;
     }
 }
+
+@media (max-width: 380px) {
+   .cust-blockquote h2 {
+      font-size: 18px;
+   }
+   
+   blockquote {
+      font-size: 10px;
+      margin: 5px;
+      // width: 90%;
+   }
+   .cust-scroll i {
+      font-size: 18px;
+   }
+   div.plants-logo h2 {
+      font-size: 40px;
+   }
+}
+
+// @media (max-width: 380px) {
+//    div.cust-blockquote{
+//       width: 10%;
+//    }
+//    h2.bq-header {
+//       background: black;
+//    }
+// }
 
 .cust-blockquote div {
     display: flex;

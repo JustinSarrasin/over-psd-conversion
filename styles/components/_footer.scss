@@ -235,3 +235,11 @@ footer strong {
         align-items: center;
     }
 }
+
+@media (max-width: 370px) {
+   .contacts-container p,
+   .services li {
+      font-size: 13px;
+   }
+
+}
